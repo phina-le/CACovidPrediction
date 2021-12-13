@@ -1,33 +1,43 @@
 # Introduction
 
-The objective of this project is to complete one of two complementary COVID-19 forecasting competitions posted on Kaggle[1], by starting from a single state-level subcomponent via California, USA and seeing if we can forecast confirmed cases and fatalities. The White House Office of Science and Technology Policy has pulled together a coalition of research groups and companies to address key open scientific questions on COVID-19:
+The objective of this Kaggle competition is to complete one of two complementary COVID-19 forecasting competitions, by starting from a single state-level subcomponent via California, USA and seeing if we can forecast confirmed cases and fatalities. 
 
-1. What do we know about non-pharmaceutical interventions? 
-2. What is known about transmission, incubation, and environmental stability? 
-3. What do we know about COVID-19 risk factors? 
-4. What has been published about medical care?
+My objective is to take this dataset and produce accurate forecasts as a smaller scale of state-level. This serves as a practice in which I test multiple models to see which one produces the most accurate results and learn more about them.
 
-My objective is to take this dataset and produce accurate forecasts and possibly identify factors that appear to impact the transmission rate of COVID-19, while answering the above questions. This serves as a practice in which I test multiple models to see which one produces the most accurate results using the scikit-learn algorithm cheat sheet ("few features should be important" bubble yes AND no)[2]
+Disclaimer from the Host: "We understand this is a serious situation, and in no way want to trivialize the human impact this crisis is causing by predicting fatalities. Our goal is to provide better methods for estimates that can assist medical and governmental institutions to prepare and adjust as pandemics unfold."
 
 # Selection of Data
 
-Data comes from John Hopkins CSSE [3], uninvolved from the Kaggle competition.
+Data comes from John Hopkins CSSE [3].
 
-It includes two files: ca_train.csv and ca_test.csv. The training file contains 62 days worth of infromation on the confirmed COVID-19 cases and fatalities in California between the dates of 1/22/2020 and 3/24/2020. 
+It includes two files: ca_train.csv and ca_test.csv. The training file contains 62 days worth of COVID-19 population data (columns showed below).
+Our dependent factors and are "confirmed cases" and "fatalities" in California between the dates of 1/22/2020 and 3/24/2020. 
 
 # Methods
 
 Tools:
 
-- NumPy, SciPy, Pandas, and Scikit-learn for data analysis and inference
+- NumPy, Pandas, and Scikit-learn for data analysis and inference
+- matplotlib for visualization
 - GitHub for hosting/version control
 - Jupyter Notebook as a programming environment
 
 Inference methods used with Scikit:
-
-Linear regression model - SGD Regressor
+- Linear regression
+- Ridge Regression
+- Logistic Regression
 
 # Results
+
+# Discussion
+
+I found that the logistic model has a high percent accuracy rate for the training data, within the acceptable margin. This suggests that the logistic model can be a useful model for predicting covid spread within a region, which does make sense as infection spreads exponentially the more people are infected, and there usually comes a point where the population of infected will flatline.
+
+This can help governments predict how many people will catch COVID within regions and accurately allocate resources to them. Since the COVID pandemic caught America so off guard, such prediction models can help the U.S government to know what to expect for future pandemics also.
+
+When exploring other Kaggle notebooks, I found that with a bigger dataset, statistics tended to learn towards a logistic model instead. Wi
+
+# Summary
 
 
 
