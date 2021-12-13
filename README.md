@@ -29,17 +29,17 @@ Inference methods used with Scikit:
 
 # Results
 
+I found that the two linear regressions were inaccurate due to their nature. In future projects I would explore other types of regression from the scikit learn website's flow chart, with more data points that will suit a logistic model.
+
 # Discussion
 
-I found that the logistic model has a high percent accuracy rate for the training data, within the acceptable margin. This suggests that the logistic model can be a useful model for predicting covid spread within a region, which does make sense as infection spreads exponentially the more people are infected, and there usually comes a point where the population of infected will flatline.
+Theoretically, it can help governments predict how many people will catch COVID within regions and accurately allocate resources to them. Since the COVID pandemic caught America so off guard, such prediction models can help the U.S government to know what to expect for future pandemics also.
 
-This can help governments predict how many people will catch COVID within regions and accurately allocate resources to them. Since the COVID pandemic caught America so off guard, such prediction models can help the U.S government to know what to expect for future pandemics also.
-
-When exploring other Kaggle notebooks, I found that with a bigger dataset, statistics tended to learn towards a logistic model instead. Wi
+When exploring other Kaggle notebooks, I found that with a bigger dataset, statistics tended to learn towards a logistic model instead. Since after a while, the number of confirmed cases usually flatlines due to the limitations of the population. It's an interesting connection to evolutionary population statistics, similar to how within a certain area, a species population will grow exponentially until reaching a limit where it will flatline.
 
 # Summary
 
-
+CA COVID Values grows exponentially, in my next project I will use a bigger dataset and most likely a logistic model.
 
 [1] Kaggle Competition - https://www.kaggle.com/c/covid19-local-us-ca-forecasting-week-1/overview/description
 [2] Scikit-Learn Algorithm Cheat Sheet - https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
